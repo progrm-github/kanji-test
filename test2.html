@@ -103,7 +103,7 @@ canvas {
   <body>
       <center>
           <div  class="animate__animated animate__zoomIn">
-          <div id="quiz"><br><h1><ruby>〇<rt>わたし</rt></ruby></h1><br></div>
+          <div id="quiz"><br><h1><ruby>元〇<rt>げんき</rt></ruby></h1><br></div>
           <canvas id="can" width="256" height="256"></canvas><br><br>
           <div id="baton"><button class="big-button" onclick="reco();"><ruby>確認<rt>かくにん</rt></ruby></button></div>
           <br><br><br><p>&copy; 2021 Progrm</p>
@@ -114,9 +114,9 @@ canvas {
   KanjiCanvas.init('can');
 function reco() {
     KanjiCanvas.recognize('can');
-    if ('私' == KanjiCanvas.recognize('can').charAt(0)) {
-        document.getElementById("quiz").innerHTML = "<h1><ruby>私<rt>わたし</rt></ruby></h1>";
-        document.getElementById("baton").innerHTML = "<button class='big-button' onClick=\"location.href='test2.html'\"><ruby>次<rt>つぎ</rt></ruby>へ</button>";
+    if ('気' == KanjiCanvas.recognize('can').charAt(0)) {
+        document.getElementById("quiz").innerHTML = "<h1><ruby>元気<rt>げんき</rt></ruby></h1>";
+        document.getElementById("baton").innerHTML = "<button class='big-button' onClick=\"location.href='clear.html'\"><ruby>次<rt>つぎ</rt></ruby>へ</button>";
     }
     else {
         KanjiCanvas.erase('can');
