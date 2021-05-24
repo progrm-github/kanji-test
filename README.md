@@ -1,0 +1,2 @@
+# kanji-test
+ 
